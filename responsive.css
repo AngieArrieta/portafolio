@@ -1,0 +1,19 @@
+@media (max-width:1210px){
+    #header{
+        text-align: center;
+    }
+    #menu > ul{
+        height: 50%;
+    }
+}
+
+
+@media (max-width:690px){
+    #content{
+        flex-direction: column;
+    }
+    #menu > ul{
+        flex-grow: 1;
+    }
+
+}

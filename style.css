@@ -1,0 +1,194 @@
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+
+#container{
+
+    width: 90%;
+    height: auto;
+    margin: 0px auto;
+    border: 1px solid rgba(225,225,226,0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 600px;
+
+}
+
+/*=================== HEADER ======================*/
+#header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center; /* centrado vertical */
+    height: 120px;
+    border-bottom: 1px solid rgba(225,225,226,0.8);
+}
+
+.logo{
+    flex-grow: 1;/*para preestablecer el tamaño y cuando se reduzca la pantalla ocupe todo el espacio*/
+    flex-basis: 65%;/*lo que ocupara este espacio de flex*/
+    padding: 10px;
+    margin-left: 20px;
+    color: rgb(43, 43, 43);
+    text-shadow: 1px 1px 0px #ccc;
+    text-transform: uppercase;
+}
+
+.logo h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 35px;
+    letter-spacing: 10px;
+}
+
+#menu{
+    flex-grow: 1;
+    flex-basis: 30%;
+    height: 100%;
+    padding-right: 15px;
+}
+
+#menu > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    list-style: none;
+}
+
+#menu a{
+    text-transform: uppercase;
+    color: #444;
+    padding: 10px;
+    transition: all 300ms;
+}
+
+#menu a:hover{
+    background-color: #ccc;
+    border-radius: 2px;
+}
+
+
+/*=================== CONTENIDO ======================*/
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*====ASIDE====*/
+
+#aside{
+    flex-basis: 15%;
+    margin-right: 30px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 200px;
+}
+
+#aside h2{
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 100;
+    color: #444;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(225,225,226,0.8) ;
+    text-align: center;
+}
+
+#aside ul{
+    list-style: none;
+}
+
+#aside ul li{
+    padding-bottom: 20px;
+}
+
+#aside a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: #eee;
+    color: #444;
+    transition: all 300ms;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+#aside a:hover{
+    background-color: #444;
+    color: #eee;
+}
+
+/*====PROJECTS====*/
+
+#projects{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    flex-basis: 80%;
+}
+
+.project{
+    flex-grow: 1; /*todo el ancho que puedan*/
+    flex-basis: 250px; /*El minimo que puede tomar*/
+    margin-bottom: 25px;
+    border: 1px solid rgba(225,225,226,0.8);
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.project img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.project-info{
+    padding: 10px;
+}
+
+.project-info a{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    transition: all 300ms;
+}
+
+.project-info a:hover{
+    color: rgb(255, 81, 0);
+}
+
+.project-info p{
+    font-size: 16px;
+    color: gray;
+    transition: all 300ms;
+}
+
+
+/*====FOOTER====*/
+footer{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px;
+    border-top: 1px solid rgba(225,225,226,0.8);
+
+}
+
+
